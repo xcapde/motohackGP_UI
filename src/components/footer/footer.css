@@ -1,0 +1,39 @@
+footer {
+    color: whitesmoke;
+    background-color: #1B1B1B;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+body {
+    margin: 0px;
+}
+
+.footer_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+ .footer_social_media {
+    font-size: 24px;
+    gap: 15px;
+    display: flex;
+    color: red;
+}
+
+.footer_contact {
+    font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer_contact_us {
+    display: flex;
+    gap: 5px;
+}
