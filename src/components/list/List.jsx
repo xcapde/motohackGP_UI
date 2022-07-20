@@ -1,16 +1,27 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-
+import { useEffect, useState } from "react";
+import { Card } from "../card/Card";
+import appData from "../../data_API/appData.json"
+// import { Link } from "react-router-dom";
 
 export function List(){
-    const [productList, setProductList] = useState()
+    const [motoList, setMotoList] = useState([]);
 
-
-
+    useEffect(() => {
+      setMotoList(appData)
+    },[])
+    
     
     return(
         <section>
-            <Link to="/favorites"> CLICK FOR FAVLIST! </Link>
+
+            <div className="cardList">
+
+                {motoList.map((moto,key) => 
+                <Card key={key} moto={moto}/>
+                )}
+                
+            </div>
+
         </section>
     )
 }
