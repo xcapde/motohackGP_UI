@@ -1,16 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Detail } from "../components/detail/Detail";
-import { FavList } from "../components/favlist/FavList";
-import { Home } from "../pages/Home";
+import React from "react";
+import App from "../App";
+import { Detail } from "../pages/detail/Detail";
+import { FavList } from "../pages/favlist/FavList";
 
-    export default function Router () {
+    export default function Router(){
         return (
 
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={Home}/>
-                    <Route path="/detail/:id" element={Detail}/>
-                    <Route path="/favorites" element={FavList}/>
+                    <Route path="/" element={<App/>}/>
+                    <Route path="/detail/:id" element={<Detail/>}/>
+                    <Route path="/favorites" element={<FavList/>}/>
                 </Routes>
             </BrowserRouter>
         )

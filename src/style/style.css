@@ -1,0 +1,13 @@
+@import url(../components/navbar/navbar.css);
+@import url(../components/list/list.css);
+@import url(../components/card/card.css);
+@import url(../components/footer/footer.css);
+@import url(../pages/detail/detail.css);
+@import url(../pages/favlist/favlist.css);
+
+:root{
+    margin: 0;
+    padding: 0;
+    
+    --primaryColor: red;
+}

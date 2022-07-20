@@ -1,4 +1,4 @@
-export function Navbar () {
+export function Navbar(){
     return (
         <section>
             

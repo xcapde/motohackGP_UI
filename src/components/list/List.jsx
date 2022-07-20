@@ -1,8 +1,16 @@
-export function List(){
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
+
+export function List(){
+    const [productList, setProductList] = useState()
+
+
+
+    
     return(
         <section>
-            HOLA PATATA!
+            <Link to="/favorites"> CLICK FOR FAVLIST! </Link>
         </section>
     )
 }
