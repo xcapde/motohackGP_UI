@@ -8,5 +8,13 @@
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
-    align-content: center;
+    align-items: center;
+}
+
+.back_btn {
+    align-self: flex-start;
+    margin: 1.5em;
+    border-radius: 5em;
+    height: 4vh;
+    width: 4vh;
 }

@@ -6,6 +6,7 @@
     justify-content: space-around;
     align-items: center;
     height: 8vh;
+    z-index: 1;
 }
 
   .topnav input[type=text] {
@@ -57,4 +58,19 @@
   .navbar_register:hover {
     background-color: rgba(255, 255, 255, 0.06);
     transition: 0.5s ease-in-out 100ms;
+  }
+
+  .search_btn {
+    position: absolute;
+    color: white;
+    background-color: inherit;
+    border: none;
+    margin-right: 15px;
+  }
+
+  .topnav {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
