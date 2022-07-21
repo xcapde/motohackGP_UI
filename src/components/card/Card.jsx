@@ -27,7 +27,7 @@ export function Card(props){
                     </Link>
                     <img src={props.moto.seller.avatar} className="sellerAvatar" alt="seller avatar"/>
                     <p className="moto_year">{props.moto.year}</p>
-                    <button onClick={()=>markFavorite(props.moto)} className={props.moto.isFavorite? "fav_btn isFav" : "fav_btn"}><i class="fa-solid fa-star"></i></button>
+                    <button onClick={()=>markFavorite(props.moto)} className={props.moto.isFavorite? "fav_btn isFav" : "fav_btn"}><i className="fa-solid fa-star"></i></button>
                     <div className="info_icons">    
                         <button className={props.moto.isClassic?"classic_icon" : "hidden"}><i className="fa-solid fa-landmark"></i></button>
                         <button className={props.moto.isEco?"eco_icon" : "hidden"}><i className="fa-solid fa-leaf"></i></button>
