@@ -6,6 +6,7 @@ export function Detail() {
 	const [id, setId] = useState(useParams().id)
 	const [motoDetail, setMotoDetail] = useState({})
 
+	//const sellerAvatar = motoDetail.seller.avatar;
 	useEffect(() => {
 	  if(!id) return;
 
@@ -17,13 +18,15 @@ export function Detail() {
 				};
 			});
 		};
-	  
+	
 		getDataById(id);
 
 	}, [id])
-
+	console.log(sellerAvatar)
 	return (
+		
 		<section>
+			
 			<div className="wrapper">
 				<div className="card">
 					<div className="product-right">
@@ -33,10 +36,10 @@ export function Detail() {
 						/>
 					</div>
 					<div className="product-left">
-						<div className="star"><i class="fa-solid fa-star"></i></div>
+						<div className="star"><i className="fa-solid fa-star"></i></div>
              <div className="header">
-						<img src={motoDetail.seller.avatar} alt=""/> 
-							<p> { motoDetail.seller.name}</p>
+						{/* <img src={motoDetail.seller.avatar} alt=""/>  */}
+							  {/* <p> { motoDetail.seller.name}</p>   */}
 							<h2>{motoDetail.brand}</h2>
 							<h2>{ motoDetail.model}</h2>
 						</div>
@@ -47,7 +50,7 @@ export function Detail() {
 								<span>{ motoDetail.km}</span>
 								<span>{ motoDetail.cc}</span>
 								<span>{ motoDetail.hp}</span>
-								<i class="fa-solid fa-location-dot"></i>
+								<i className="fa-solid fa-location-dot"></i>
 								<span>{ motoDetail.location}</span>
 							</div>
 							<p>{ motoDetail.description}
