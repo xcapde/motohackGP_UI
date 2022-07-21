@@ -5,7 +5,7 @@ export function Navbar(){
     return (
         <div className='navbar_ctn'>
         <nav className='navbar'>
-            <img src={Logo} alt=""/>
+            <img className="navbar_logo"src={Logo} alt=""/>
             <div className="topnav">
                 <input type="text" placeholder="Search.."/>
             </div>

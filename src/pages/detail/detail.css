@@ -5,7 +5,7 @@
   }
   
   .card {
-    max-width: 65rem;
+    max-width: 80rem;
     position: relative;
     display: flex;
     top: 50%;
@@ -22,14 +22,17 @@
     border-bottom-left-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    background: #333;
-    color: #fff;
+    background: #bcbcbc;
+    color: #000000;
   }
-  
+  .star {
+    display: flex;
+    justify-content: flex-end;
+  }
   .product-right {
     background: #fff;
     height: auto;
-    width: 100%;
+    width: 80%;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     display: flex;
@@ -57,22 +60,28 @@
   /* Product Description */
   
   .product-main p {
-    opacity: 0.5;
+ 
     margin: 2rem 0;
     line-height: 1.45;
   }
   
   .focus {
     text-transform: uppercase;
-    margin: 0 0 1rem 0;
+    margin:  1rem ;
     padding: 0 0 0.9rem 0;
     border-bottom: 0.2rem solid rgba(250, 250, 250, 0.3);
   }
-  
-  .focus span:last-child {
+  .focus span{
+    margin:0 0 0 1rem;
+
+  }
+  .focus i{
+    margin: 1rem;
+  }
+  /*.focus span:last-child {
     margin: 0 0 0 1rem;
     width: 100%;
-  }
+  }*/
   
   .focus span:first-child {
     border-bottom: 0.2rem solid #fff;
@@ -89,7 +98,9 @@
   /* Total Price  */
   
   .product-total {
-    margin: 0 0 2rem 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
   }
   
   .product-total p {
@@ -98,29 +109,36 @@
     opacity: 0.5;
   }
   
-  .product-total h3{
+  /*.product-total h3{
     margin: 0 0 1rem 0;
-  }
+  }*/
   
   
   /* Add to cart button  */
+  .product-btns{
+    display:flex;
+    justify-content: center;
+  }
   
   .product-add {
+    display: flex;
     border: 1px solid #fff;
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 5rem;
+    width: 50%;
+    padding: 1.2rem;
+    border-radius: 1rem;
     transition: all 0.5s ease-out;
+    background-color: #676767;
+    justify-content: center;
   }
   
   .product-add:hover {
-    background-color: #fff;
-    color: #2e282a;
+    background-color: #ff0000;
+    color: #fff;
   }
   
   .product-btns a {
     text-decoration: none;
-    color: #fff;
+    color: #ff0000;
     text-transform: uppercase;
     display: flex;
     align-items: center;

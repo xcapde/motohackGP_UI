@@ -1,7 +1,12 @@
 .cardList{
     width: 100%;
+<<<<<<< HEAD
     height: 100vh;
     background-color: #ccc5b9;
+=======
+    height: 82vh;
+    background-color: aqua;
+>>>>>>> 39ace0156bedbacbcdf433470568c2197bdd6763
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
