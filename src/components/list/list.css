@@ -4,6 +4,4 @@
     background-color: #ccc5b9;
     display: flex;
     flex-wrap: wrap;
-    overflow: auto;
-    align-content: center;
 }
