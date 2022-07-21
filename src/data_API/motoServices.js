@@ -12,4 +12,8 @@ export const motoServices = {
         return motoById;
     },
 
+    getMotosBySearch(search){
+        const motosBySearch = axios.get(baseURL + `/motos?search=${search}`).then(res => res.data);
+        return motosBySearch;
+    },    
 }
