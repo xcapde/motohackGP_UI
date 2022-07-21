@@ -33,20 +33,19 @@ export function Card(props){
                             <h1 className="moto_brand">{props.moto.brand}</h1>
                             <h2 className="moto_model">{props.moto.model}</h2>
                         </div>
-
-                        <button className="card_info_btn">+INFO</button>
-
-                    </div>
-
-                    <div className="card_tech_box">
                         <div className="techInfo">
                             <p className="techdata">{props.moto.km}km</p>
                             <p className="techdata">{props.moto.cc}cc</p>
                             <p className="techdata">{props.moto.hp}</p>
                         </div>
+
+                    </div>
+
+                    <div className="card_tech_box">
                         <div className="price_location">
                             <h1 className="locationInfo">{props.moto.location}</h1>                            
-                            <h1 className="priceInfo">{props.moto.price}€</h1>                            
+                            <h1 className="priceInfo">{props.moto.price}€</h1>    
+                            <button className="card_info_btn">+INFO</button>                        
                         </div>
                     </div>                      
                 </div>
