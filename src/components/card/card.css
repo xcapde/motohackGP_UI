@@ -1,16 +1,23 @@
 .card_cnt{
     width: 20%;
     height: 39rem;
-    top:22rem;
+    
     margin:2.5%;
     background-color: grey;
     display: flex ;
     position: relative;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0rem 1rem 1.5rem rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    
+}
+.card_cnt:hover{
+    box-shadow: 0rem 0.3rem 0.4rem rgba(255, 0, 0, 0.936);
 }
 .card_img_cnt img{
     width: 100%;
+    
 }
 
 
@@ -18,12 +25,16 @@
     position:absolute;
     top:1rem;
     left:1.5rem;
+    height: 5rem;
+    width: 5rem !important;
+    border-radius: 50%;
 
 }
 .moto_img img {
     width:100% ;
     position: relative;
     height: auto;
+    border-radius: 50%;
 
 }
 .moto_year{
@@ -45,13 +56,13 @@
     display: flex;
     font-size: 1rem;
     position: relative;
-    left: 4rem;
+    
 
 }
 
 .card_basicInfo{
     height: 4rem;
-    left: 20rem;
+    left: 10rem;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -60,19 +71,26 @@
 .card_info_box{
     display: flex;
     flex-direction: column;
-    right:22.5rem;
+    right:19rem;
     position: relative;
 
 }
-.moto_model{
-    bottom:1.5rem;
+.moto_brand{
+    left:10rem;
     position: relative;
 }
-.cad_info_btn{
-    height:4rem;
-    right:3rem;
-    bottom:1rem;
+.moto_model{
+    bottom:1.5rem;
+    left:10rem;
     position: relative;
+    width: 12rem;
+
+}
+.card_info_btn{
+    height:4rem;
+    left:20rem;
+    top:1rem;
+    position: absolute;
 }
 .card_tech_box{
     height: 100%;
@@ -81,14 +99,34 @@
     flex-direction: row;
     top:7rem;
     position: relative;
-    right:12rem;
+    right:9rem;
+}
+.techInfo{
+    right:2rem;
+    position: relative;
 }
 .price_location{
-    left:22rem;
+    left: 18rem;
     position: relative;
-    bottom: 2rem;
-    
+    height: 8rem;
+    width: 10rem;
+    top:3rem;
+    display: flex;
+    flex-direction: column;
+}
+.locationInfo{
+    right:1rem;
+    position: relative;
+    bottom: 3rem;
+    display: flex;
+    justify-content: flex-end;
+
 }
 .priceInfo{
-    font-size: 2.5rem;
+    font-size: 2rem;
+    right: 1rem;
+    bottom: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
 }
