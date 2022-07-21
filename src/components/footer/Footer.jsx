@@ -7,11 +7,10 @@ export function Footer(){
                     <i className="fa-brands fa-facebook"></i>
                 </div>
                 <div>
-                    <p className="footer_text">®Todos los derechos Reservados por MotoHackGp.</p>
+                    <p className="footer_text">®Todos los derechos reservados por MotoHackGp.</p>
                 </div>
                 <div className="footer_contact">
-                    <div className="footer_contact_us"><i className="fa-solid fa-envelope"></i>Contact us</div>
-                    <div>example@gmail</div>
+                    <div className="footer_contact_us"><i className="fa-solid fa-envelope"></i>info@motohackgp.com</div>
                 </div>
             </footer>
     )

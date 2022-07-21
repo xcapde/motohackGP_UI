@@ -30,7 +30,7 @@ export function FavList(){
             
                 {isLoading? <Loader/> : '' }
                 <header>
-                    <h1 className="favList_info">{favList.length} favorites </h1>
+                    <h1 className="favList_info">{favList.length} FAVORITES  <i className="fa-solid fa-motorcycle iconBike"></i></h1>
                 </header>
                 
                 {favList.map((moto,key) => 

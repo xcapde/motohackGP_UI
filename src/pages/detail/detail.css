@@ -1,7 +1,6 @@
 .wrapper {
     height: 90vh;
     position: relative;
-    background-color: #ccc5b9;
   }
   
   .card {
@@ -12,42 +11,86 @@
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: -2rem 2rem 3.2rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    background: #bcbcbc;
   }
   
   .product-left {
     height: 100%;
     width: 70%;
-    padding: 4rem 2rem;
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     background: #bcbcbc;
     color: #000000;
   }
-  .star {
+
+  .contact_box{
+    margin-top: 2%;
     display: flex;
-    justify-content: flex-end;
   }
+
+  .contact_box img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+
+  .contact_box p{
+    margin-left: 2.5rem;
+  }
+
+  .star {
+    justify-content: flex-end;
+    color: #676767;
+    border: none;
+    border-radius: 2.5rem;
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-right: 2%;
+  }
+
+  .isFavDetail{
+    background-color: rgb(228, 228, 88);
+    color: white;  
+  }
+  
   .product-right {
     background: #fff;
     height: auto;
     width: 80%;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 1rem;
   }
   
   .product-right img {
     height: 30rem;
+    border-radius: 1rem;
   }
+
+  .product-left .classic_icon, .product-left .eco_icon{
+    border: none;
+    border-radius: 2.5rem;
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-right: 2%;
+}
   
   .header h1 {
     text-transform: uppercase;
-    margin: 2rem 0;
-     font-size: 2.5rem;
+    margin: 2% 0;
+  }
+
+  .brand_detail{
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  .model_detail{
+    font-size: xx-large;
+    font-weight: 500;
   }
   
   /* Price */
@@ -64,29 +107,38 @@
     margin: 2rem 0;
     line-height: 1.45;
   }
+
+  h5{
+    padding: 0;
+    margin: 5rem 0 0 0;
+  }
   
   .focus {
     text-transform: uppercase;
-    margin:  1rem ;
-    padding: 0 0 0.9rem 0;
+    margin:  1rem 0;
+    padding: 0 0 1rem 0;
     border-bottom: 0.2rem solid rgba(250, 250, 250, 0.3);
+    display: flex;
+    justify-content: space-between;
   }
-  .focus span{
-    margin:0 0 0 1rem;
 
+  .focus span{
+    margin:0 0 0 0.5rem;
+    border-left: #5c5c5c;
+    border-width: 0.05rem;
+    border-style: solid;
+    padding: 0.3rem;
+    font-size: 0.8rem;
   }
-  .focus i{
-    margin: 1rem;
-  }
-  /*.focus span:last-child {
-    margin: 0 0 0 1rem;
-    width: 100%;
-  }*/
   
-  .focus span:first-child {
+  .focus i{
+    padding: 0 0.5rem 0 0.1rem;
+  }
+  
+  /* .focus span:first-child {
     border-bottom: 0.2rem solid #fff;
     padding: 0 0 0.9rem 0;
-  }
+  } */
   
   /* Choose color / quantity  */
   
