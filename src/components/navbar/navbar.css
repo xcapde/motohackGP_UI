@@ -5,8 +5,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 8vh;
+    height: 10vh;
     z-index: 1;
+}
+
+.logo{
+  height: 100%;
 }
 
   .topnav input[type=text] {

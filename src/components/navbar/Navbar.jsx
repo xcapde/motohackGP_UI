@@ -32,7 +32,7 @@ export function Navbar(){
         <nav className='navbar_ctn'>
             {showSearch? <SearchList searchList={searchList} setShowSearch={setShowSearch}/> : ''}
             
-            <img src={Logo} alt=""/>
+            <img className='logo' src={Logo} alt=""/>
             
             <form onSubmit={onHandleSubmit} className="topnav">
                 <input onChange={onInputChange} value={searchValue ||''} type="text" placeholder="Search.."/>
