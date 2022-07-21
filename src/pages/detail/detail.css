@@ -132,7 +132,7 @@
   }
   
   .product-add:hover {
-    background-color: #ff0000;
+    background-color: var(--primaryColorHover);
     color: #fff;
   }
   

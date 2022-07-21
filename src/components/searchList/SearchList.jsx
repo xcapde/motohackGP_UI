@@ -13,7 +13,7 @@ export function SearchList({searchList,setShowSearch}){
                     <i class="fa-solid fa-arrow-left"></i>
                 </button>
 
-                {searchList.length === 0? <h1 className="search_info">Not results <i className="fa-solid fa-motorcycle iconBike"></i></h1> 
+                {searchList.length === 0? <h1 className="search_info">No results <i className="fa-solid fa-motorcycle iconBike"></i></h1> 
                 : searchList.length === 1? <h1 className="search_info">1 result <i className="fa-solid fa-motorcycle iconBike"></i></h1> 
                 : <h1 className="search_info">{`${searchList.length} results`} <i className="fa-solid fa-motorcycle iconBike"></i></h1>}
             </header>
