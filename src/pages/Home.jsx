@@ -8,6 +8,5 @@ export function Home(){
         <List/>
         <Footer/>
         </>
-
     )
 }

@@ -1,7 +1,27 @@
-export function Detail() {
-	// const function name(params) {
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { motoServices } from "../../data_API/motoServices";
 
-	// }
+export function Detail() {
+	const [id, setId] = useState(useParams().id)
+	const [motoDetail, setMotoDetail] = useState({})
+
+	useEffect(() => {
+	  if(!id) return;
+
+	  const getDataById = () => {
+			motoServices.getMotoById(id).then(res => {
+				if(res){
+					setMotoDetail(res);
+					console.log(res)
+				};
+			});
+		};
+	  
+		getDataById(id);
+
+	}, [id])
+	
 
 	return (
 		<section>
@@ -16,7 +36,7 @@ export function Detail() {
 					<div className="product-left">
 						<div className="header">
 							<p> Prduct Owner</p>
-							<h2>Kawasaki</h2>
+							<h2>{motoDetail.brand}</h2>
 							<h2>Z900</h2>
 						</div>
 
