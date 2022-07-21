@@ -14,8 +14,26 @@
   display: contents;
 }
 
+.logoAndSlogan{
+  display: flex;
+  height: 10vh;
+  width: 15vw;
+}
+
 .logo{
   height: 100%;
+}
+
+.slogan{
+  font-family: 'Farsan', cursive;
+  font-size: large;
+  cursor:pointer;
+  color: rgba(255, 255, 255, 0.267);
+  margin-left: 5%;
+}
+
+.slogan:hover{
+  color: var(--primaryColor);
 }
 
   .topnav input[type=text] {
@@ -29,6 +47,24 @@
     width: 25em;
     height: 2em;
     outline: none;
+    cursor: pointer;
+  }
+
+  .topnav input:hover{
+    background-color: rgba(255, 255, 255, 0.158);
+  }
+
+  .topnav input:active, .topnav input:focus{
+    background-color: rgba(255, 255, 255, 0.26);
+    cursor: text;
+  }
+
+  .search_btn {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.267);
+    background-color: inherit;
+    border: none;
+    margin-right: 15px;
   }
 
   .button_ctn {
@@ -37,42 +73,39 @@
   }
 
   .navbar_menu {
-    color: red;
+    color: var(--primaryColor);
     background-color: black;
     height: 100%;
     padding: 0 2rem;
     border: none;
-    font-size: large;
+    font-size: medium;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
   }
 
   .navbar_menu:hover {
-    background-color: red;
+    background-color: var(--primaryColorHover);
     color: white;
     transition: 0.2s ease-out 100ms;
   }
 
   .navbar_menu:active {
-    background-color: rgb(196, 13, 13);
+    background-color:var(--primaryColorActive);
     color: white;
     transition: none;
   }
 
   .actived{
-    background-color: rgb(196, 13, 13);
+    background-color: var(--primaryColor);
     color: white;
     transition: none;
   }
 
-  .search_btn {
-    position: absolute;
-    color: white;
-    background-color: inherit;
-    border: none;
-    margin-right: 15px;
+  .actived:hover{
+    background-color: var(--primaryColor);
   }
 
   .topnav {

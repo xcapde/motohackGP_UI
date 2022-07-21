@@ -8,11 +8,18 @@
 @import url(../pages/favlist/favlist.css);
 @import url(../pages/login/login.css);
 
+@import url('https://fonts.googleapis.com/css2?family=Farsan&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
     margin: 0;
     padding: 0;
-    background-color: #ccc5b9;
+    background-color: var(--background);
+    /* font-family: 'Farsan', cursive; */
+    font-family: 'Work Sans', sans-serif;
 
     
-    --primaryColor: red;
+    --primaryColor: #D73028;
+    --primaryColorHover: #db1b11;
+    --primaryColorActive: #db1b11;
+    --background: #ccc5b9;
 }

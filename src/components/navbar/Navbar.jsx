@@ -35,7 +35,10 @@ export function Navbar(){
             {showSearch? <SearchList searchList={searchList} setShowSearch={setShowSearch}/> : ''}
             
             <Link to="/">
-                <img className='logo' src={Logo} alt=""/>
+                <div className='logoAndSlogan'>
+                    <img className='logo' src={Logo} alt=""/>
+                    <p className='slogan'>Brrrrrum your body!</p>
+                </div>
             </Link>
             
             <form onSubmit={onHandleSubmit} className="topnav">

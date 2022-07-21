@@ -1,20 +1,43 @@
 .searchList{
     z-index: 2;
     position: fixed;
-    background-color: rgb(17, 17, 17);
+    background-color: var(--background);
     top: 10vh;
-    height: 80vh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
-    align-items: center;
 }
 
 .back_btn {
-    align-self: flex-start;
-    margin: 1.5em;
-    border-radius: 5em;
-    height: 4vh;
-    width: 4vh;
+    z-index: 3;
+    position: fixed;
+    margin: 1%;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: none;
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.back_btn:hover{
+    box-shadow: 0rem 0rem 0.5rem rgb(212, 36, 36);
+}
+
+.searchList header{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+}
+
+.search_info{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.iconBike{
+    font-size: medium;
+    margin-left: 1%;
 }
