@@ -114,24 +114,35 @@
     margin: 0.5vw;
     min-width: 2vw;
     min-height: 1vw;
-    bottom: 0vh;
+   
 
 }
 .card_info_box{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 2.5vw;
+    position: relative;
+    top: 4.5vw;
 }
 
 .moto_brand {
     height: 1vw;
     width: 1vw;
+    position:absolute;
+    bottom: 3vw;
+}
+.moto_model{
+    position: absolute;
+    bottom:1vw;
+    width: 6vw;
+    min-width: 6vw;
+    
 }
 
 .card_info_btn{
     height: 3rem;
     width: 7rem;
+    position: absolute;
+    top:7vw;
 }
 .card_tech_box{
     margin: 1rem;
@@ -152,6 +163,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    position: relative;
+    bottom:1vw;
 }
 .locationInfo{
     display: flex;
@@ -159,4 +172,6 @@
 .priceInfo{
     font-size: 1.5rem;
     display: flex;
+    position:absolute;
+    top:3.5vw;
 }
