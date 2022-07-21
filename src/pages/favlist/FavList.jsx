@@ -29,9 +29,10 @@ export function FavList(){
             <div className="favList">
             
                 {isLoading? <Loader/> : '' }
-
-                <h1 className="favList_info">{favList.length} favorites </h1>
-
+                <header>
+                    <h1 className="favList_info">{favList.length} favorites </h1>
+                </header>
+                
                 {favList.map((moto,key) => 
                 <Card key={key} moto={moto}/>
                 )}   
