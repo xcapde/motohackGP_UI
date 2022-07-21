@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Navbar } from "../../components/navbar/Navbar";
 import { motoServices } from "../../data_API/motoServices";
 
 export function Detail() {
@@ -22,10 +23,11 @@ export function Detail() {
 		getDataById(id);
 
 	}, [id])
-	
+	//console.log(sellerAvatar)
 	return (
 		
 		<section>
+			<Navbar/>
 			
 			<div className="wrapper">
 				<div className="card">
@@ -39,7 +41,7 @@ export function Detail() {
 						<div className="star"><i className="fa-solid fa-star"></i></div>
              <div className="header">
 						{/* <img src={motoDetail.seller.avatar} alt=""/>  */}
-							  {/* <p> { motoDetail.seller.name}</p>   */}
+							   {/* <p> { motoDetail.seller.name}</p>      */}
 							<h2>{motoDetail.brand}</h2>
 							<h2>{ motoDetail.model}</h2>
 						</div>
@@ -50,7 +52,7 @@ export function Detail() {
 								<span>Km:{ motoDetail.km}</span>
 								<span>CC:{ motoDetail.cc}</span>
 								<span>HP:{ motoDetail.hp}</span>
-								<i className="fa-solid fa-location-dot"></i>
+								<span><i className="fa-solid fa-location-dot"></i></span>
 								<span>{ motoDetail.location}</span>
 							</div>
 							<p>{ motoDetail.description}
@@ -59,7 +61,7 @@ export function Detail() {
 
 						<div className="product-details">
 							<div className="product-total">
-								<p>{motoDetail.price }</p>
+								<p>{motoDetail.price }€</p>
 							</div>
 						</div>
 						<div className="product-btns">

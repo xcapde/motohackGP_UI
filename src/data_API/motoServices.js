@@ -22,4 +22,10 @@ export const motoServices = {
             .filter(moto => moto.isFavorite === true));
         return favMotos;
     },    
+
+    updateMoto(id, data){
+        const updatedMoto = axios.put(baseURL + `/motos/${id}`, data).then(res => res.data);
+        return updatedMoto;
+
+    }
 }

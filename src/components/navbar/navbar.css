@@ -80,4 +80,35 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color:#686370;
+    height: 50%;
   }
+
+ /* @media (max-width: 768px) {
+    .navbar_ctn {
+      height: 15rem;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .button_ctn {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .logo {
+      position: relative;
+      margin-top: 1rem;
+    }
+    
+    .topnav {
+      position: relative;
+      width: 80%;
+      height: 15%;
+      margin-bottom: 5vh;
+    }
+    .navbar {
+      margin: 0;
+    }*/
+    
+  
