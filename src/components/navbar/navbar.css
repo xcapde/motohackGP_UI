@@ -1,14 +1,12 @@
 .navbar_ctn {
-  position: sticky;
-  top: 0;
-}
-
-.navbar {
+    position: sticky;
+    top: 0;
     background-color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
   .topnav input[type=text] {
     float: right;
     padding: 10px;
