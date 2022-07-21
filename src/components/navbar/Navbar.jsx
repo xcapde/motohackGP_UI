@@ -47,12 +47,14 @@ export function Navbar(){
             </form>
             
             <div className='button_ctn'>
+        
                 <Link to={`/favorites/`}>
                     <button className={pathname.includes('/favorites')? "navbar_menu actived" : "navbar_menu"}>MY FAVORITES</button>
                 </Link>
                 <Link to={`/login/`}>
                     <button className={pathname.includes('/login')? "navbar_menu actived" : "navbar_menu"}>LOG IN</button>                
                 </Link>
+                
             </div>        
         </nav>
     )

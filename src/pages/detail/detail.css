@@ -196,4 +196,47 @@
     align-items: center;
     justify-content: center;
   }
+
+
+  @media  (max-width: 940px) {
+    .card {
+      flex-direction: column;
+      margin-top: 60px;
+    }
   
+    .product-left,
+    .product-right {
+      width: 100%;
+    }
+  
+    .product-right img {
+      width: 100%;
+      right: 0;
+      left: initial;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .product-right img {
+      width: 100%;
+      margin-top: 80px;
+      height:55vh ;
+    
+    }
+    .product-left {
+      width: 83% ;
+      
+    }
+    .product-main {
+      width: 100%;
+      }
+      .focus  {
+        display: flex;
+       justify-content: center;
+      font-size: x-small;
+       
+       }
+       .header h2 {
+        font-size: small;
+  }
+}
