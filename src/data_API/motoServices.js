@@ -23,8 +23,9 @@ export const motoServices = {
         return favMotos;
     },    
 
-    putMoto(id, data){
-        const updatedMoto = axios.get(baseURL + `/motos/${id}`, data).then(res => res.data);
+    updateMoto(id, data){
+        const updatedMoto = axios.put(baseURL + `/motos/${id}`, data).then(res => res.data);
         return updatedMoto;
-    }, 
+
+    }
 }
