@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Navbar } from "../../components/navbar/Navbar";
 import { motoServices } from "../../data_API/motoServices";
 
 export function Detail() {
@@ -26,6 +27,7 @@ export function Detail() {
 	return (
 		
 		<section>
+			<Navbar/>
 			
 			<div className="wrapper">
 				<div className="card">

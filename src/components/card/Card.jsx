@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
+import { motoServices } from "../../data_API/motoServices";
 
 export function Card(props){
+
+    const updateMotoData=(id, data)=>{
+        motoServices.updatedMoto(id, data).then(res => {
+            if(res) props.getAllData();
+        })
+    }
 
     const markFavorite=(moto)=>{
         let thisMoto = moto
@@ -8,14 +15,11 @@ export function Card(props){
         if(thisMoto.isFavorite === false){
             thisMoto.isFavorite=true
             alert(`✅ ${moto.brand} ${moto.model} added to favorites!`)
-
-         }else {thisMoto.isFavorite=false
+         
+        }else {thisMoto.isFavorite=false
             alert(`❌ ${moto.brand} ${moto.model} deleted from favorites!`)}
-
-
-        //  props.getAllData();
-
-        console.log(moto.isFavorite)
+        
+        updateMotoData();
     }
 
     return (
