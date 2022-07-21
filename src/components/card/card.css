@@ -7,19 +7,18 @@
     position: relative;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0rem 1rem 1.5rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
     
 }
 .card_cnt:hover{
-    box-shadow: 0rem 0.3rem 0.4rem rgba(255, 0, 0, 0.936);
+    box-shadow: 0rem 0rem 0.5rem rgb(212, 36, 36);
 }
 .card_img_cnt{
     width: 100%;
-    height: 16rem;
-    
+    position: relative;    
+    height: 50%; 
 }
-
 
 .sellerAvatar{
     position:absolute;
@@ -32,11 +31,9 @@
 }
 .moto_img {
     width:100% ;
-    position: relative;
-    height: 100%;
+    height: -webkit-fill-available;
     border-radius: 1rem;
-
-
+    object-fit: cover;
 }
 .moto_year{
     bottom:17rem;
@@ -46,14 +43,42 @@
     width: 0%;
     
 }
-.fav_btn{
+
+.card_img_cnt button{
+    cursor: pointer;
+    border: none;
+    border-radius: 2.5rem;
+    height: 1.7rem;
+    width: 1.7rem;
     position: absolute;
+}
+
+.fav_btn{
     right:1.5rem;
     top: 1rem;
 }
 
+.info_icons{
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    display: flex;
+}
+
+.classic_icon{
+    color: rgb(95, 90, 93);
+}
+
+.eco_icon{
+    color: green;
+}
+
 .isFav{
-    background-color: yellowgreen;
+    background-color: yellow;
+}
+
+.hidden{
+    display: none;
 }
 
 .card_text_cnt{
@@ -61,77 +86,43 @@
     height:100%;
     display: flex;
     font-size: 0.7rem;
-    position: relative;
-    
-
+    justify-content: space-between;
 }
 
 .card_basicInfo{
-    height: 4rem;
-    left: 10rem;
+    height: 100%;
     display: flex;
-    flex-direction: row;
-    position: relative;
+    flex-direction: column;
+    margin: 1rem;
 
 }
 .card_info_box{
     display: flex;
     flex-direction: column;
-    right:19rem;
-    position: relative;
+}
 
-}
-.moto_brand{
-    left:10rem;
-    position: relative;
-}
-.moto_model{
-    bottom:1.5rem;
-    left:10rem;
-    position: relative;
-    width: 12rem;
-
-}
 .card_info_btn{
-    height:4rem;
-    left:10rem;
-    position: absolute;
+    height: 3rem;
+    width: 7rem;
 }
 .card_tech_box{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    right:9rem;
+    margin: 1rem;
 }
 .techInfo{
-    right:2rem;
-    position: relative;
-    top:3.5rem;
-}
-.price_location{
-    left: 9rem;
-    position: relative;
-    height: 8rem;
-    width: 10rem;
-    top:6rem;
     display: flex;
     flex-direction: column;
 }
-.locationInfo{
-    right:1rem;
-    position: relative;
-    bottom: 1rem;
+.price_location{
+    height: auto;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
-
+    flex-direction: column;
+    align-items: flex-end;
+}
+.locationInfo{
+    display: flex;
 }
 .priceInfo{
     font-size: 1.5rem;
-    right: 1rem;
-    bottom: 2.2rem;
-    position: relative;
     display: flex;
-    justify-content: flex-end;
 }

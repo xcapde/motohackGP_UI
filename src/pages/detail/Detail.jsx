@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Navbar } from "../../components/navbar/Navbar";
 import { motoServices } from "../../data_API/motoServices";
 
 export function Detail() {
@@ -26,6 +27,7 @@ export function Detail() {
 	return (
 		
 		<section>
+			<Navbar/>
 			
 			<div className="wrapper">
 				<div className="card">
@@ -46,10 +48,10 @@ export function Detail() {
 
 						<div className="product-main">
 							<div className="focus">
-								<span>Year: { motoDetail.prodYear}</span>
-								<span>Km: { motoDetail.km}</span>
-								<span>CC: { motoDetail.cc}</span>
-								<span> { motoDetail.hp}</span>
+								<span>Year:{ motoDetail.prodYear}</span>
+								<span>Km:{ motoDetail.km}</span>
+								<span>CC:{ motoDetail.cc}</span>
+								<span>HP:{ motoDetail.hp}</span>
 								<i className="fa-solid fa-location-dot"></i>
 								<span>{ motoDetail.location}</span>
 							</div>
