@@ -52,7 +52,7 @@ export function Detail() {
 								<span>Km:{ motoDetail.km}</span>
 								<span>CC:{ motoDetail.cc}</span>
 								<span>HP:{ motoDetail.hp}</span>
-								<i className="fa-solid fa-location-dot"></i>
+								<span><i className="fa-solid fa-location-dot"></i></span>
 								<span>{ motoDetail.location}</span>
 							</div>
 							<p>{ motoDetail.description}
