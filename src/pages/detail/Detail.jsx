@@ -22,7 +22,7 @@ export function Detail() {
 		getDataById(id);
 
 	}, [id])
-	console.log(sellerAvatar)
+	//console.log(sellerAvatar)
 	return (
 		
 		<section>
@@ -39,7 +39,7 @@ export function Detail() {
 						<div className="star"><i className="fa-solid fa-star"></i></div>
              <div className="header">
 						{/* <img src={motoDetail.seller.avatar} alt=""/>  */}
-							  {/* <p> { motoDetail.seller.name}</p>   */}
+							   {/* <p> { motoDetail.seller.name}</p>      */}
 							<h2>{motoDetail.brand}</h2>
 							<h2>{ motoDetail.model}</h2>
 						</div>
@@ -47,8 +47,8 @@ export function Detail() {
 						<div className="product-main">
 							<div className="focus">
 								<span>{ motoDetail.prodYear}</span>
-								<span>{ motoDetail.km}</span>
-								<span>{ motoDetail.cc}</span>
+								<span>{ motoDetail.km}km</span>
+								<span>{ motoDetail.cc}cc</span>
 								<span>{ motoDetail.hp}</span>
 								<i className="fa-solid fa-location-dot"></i>
 								<span>{ motoDetail.location}</span>
@@ -59,7 +59,7 @@ export function Detail() {
 
 						<div className="product-details">
 							<div className="product-total">
-								<p>{motoDetail.price }</p>
+								<p>€{motoDetail.price }</p>
 							</div>
 						</div>
 						<div className="product-btns">
