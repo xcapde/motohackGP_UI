@@ -3,16 +3,19 @@ import { Link } from "react-router-dom";
 export function Card(props){
 
     const markFavorite=(moto)=>{
-        // let thisMoto = moto
+        let thisMoto = moto
 
-        // if(thisMoto.isFavorite === false){
-        //     thisMoto.isFavorite=true
+        if(thisMoto.isFavorite === false){
+            thisMoto.isFavorite=true
+            alert(`✅ ${moto.brand} ${moto.model} added to favorites!`)
 
-        //  }else thisMoto.isFavorite=false
+         }else {thisMoto.isFavorite=false
+            alert(`❌ ${moto.brand} ${moto.model} deleted from favorites!`)}
 
-        // //  props.getAllData();
 
-        // console.log(moto.isFavorite)
+        //  props.getAllData();
+
+        console.log(moto.isFavorite)
     }
 
     return (
@@ -24,7 +27,11 @@ export function Card(props){
                     </Link>
                     <img src={props.moto.seller.avatar} className="sellerAvatar" alt="seller avatar"/>
                     <p className="moto_year">{props.moto.year}</p>
-                    <button onClick={()=>markFavorite(props.moto)} className={props.moto.isFavorite? "fav_btn isFav" : "fav_btn"}>{props.moto.isFavorite}</button>
+                    <button onClick={()=>markFavorite(props.moto)} className={props.moto.isFavorite? "fav_btn isFav" : "fav_btn"}><i class="fa-solid fa-star"></i></button>
+                    <div className="info_icons">    
+                        <button className={props.moto.isClassic?"classic_icon" : "hidden"}><i className="fa-solid fa-landmark"></i></button>
+                        <button className={props.moto.isEco?"eco_icon" : "hidden"}><i className="fa-solid fa-leaf"></i></button>
+                    </div>
                 </div>
 
                 <div className="card_text_cnt">

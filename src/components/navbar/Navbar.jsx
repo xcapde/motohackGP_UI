@@ -1,5 +1,5 @@
 import Logo from '../../images/logo1.png'
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from 'react';
 import { motoServices } from '../../data_API/motoServices';
 import { SearchList } from '../searchList/SearchList';
@@ -9,6 +9,8 @@ export function Navbar(){
     const [searchList, setSearchList] = useState([]);
     const [searchValue, setSerachValue] = useState('');
     const [showSearch, setShowSearch] = useState(false);
+    const pathname = useLocation().pathname;
+
 
     const getSearchData = (value) => {
         motoServices.getMotosBySearch(value).then(res => {
@@ -32,7 +34,9 @@ export function Navbar(){
         <nav className='navbar_ctn'>
             {showSearch? <SearchList searchList={searchList} setShowSearch={setShowSearch}/> : ''}
             
-            <img className='logo' src={Logo} alt=""/>
+            <Link to="/">
+                <img className='logo' src={Logo} alt=""/>
+            </Link>
             
             <form onSubmit={onHandleSubmit} className="topnav">
                 <input onChange={onInputChange} value={searchValue ||''} type="text" placeholder="Search.."/>
@@ -40,10 +44,10 @@ export function Navbar(){
             </form>
             
             <div className='button_ctn'>
-                <button className="navbar_register">Register</button>                
                 <Link to={`/favorites/`}>
-                    <button className='navbar_favlist_button'>FavList</button>
+                    <button className={pathname.includes('/favorites')? "navbar_menu actived" : "navbar_menu"}>MY FAVORITES</button>
                 </Link>
+                <button className={pathname.includes('/register')? "navbar_menu actived" : "navbar_menu"}>LOG IN</button>                
             </div>        
         </nav>
     )

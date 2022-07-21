@@ -9,6 +9,11 @@
     z-index: 1;
 }
 
+.navbar_ctn a{
+  height: 10vh;
+  display: contents;
+}
+
 .logo{
   height: 100%;
 }
@@ -17,7 +22,7 @@
     float: right;
     padding: 10px;
     border: none;
-    font-size: 17px;
+    font-size: medium;
     background-color: rgba(255, 255, 255, 0.06);
     color: white;
     border-radius: 25px;
@@ -26,42 +31,40 @@
     outline: none;
   }
 
-
   .button_ctn {
     display: flex;
-    height: 8vh;
+    height: 10vh;
   }
 
-  .navbar_favlist_button {
+  .navbar_menu {
     color: red;
     background-color: black;
     height: 100%;
-    padding: 0 10%;
+    padding: 0 2rem;
     border: none;
-    font-size: 2em;
+    font-size: large;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
+    cursor: pointer;
   }
 
-  .navbar_favlist_button:hover {
-    background-color: rgba(255, 255, 255, 0.06);
-    transition: 0.5s ease-out 100ms;
-  }
-  
-  .navbar_register {
-    color: red;
-    background-color: black;
-    border: none;
-    font-size: 2em;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
+  .navbar_menu:hover {
+    background-color: red;
+    color: white;
+    transition: 0.2s ease-out 100ms;
   }
 
-  .navbar_register:hover {
-    background-color: rgba(255, 255, 255, 0.06);
-    transition: 0.5s ease-in-out 100ms;
+  .navbar_menu:active {
+    background-color: rgb(196, 13, 13);
+    color: white;
+    transition: none;
+  }
+
+  .actived{
+    background-color: rgb(196, 13, 13);
+    color: white;
+    transition: none;
   }
 
   .search_btn {
