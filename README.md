@@ -1,71 +1,118 @@
-# Getting Started with Create React App
+<div align="center">
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/pfdDMZp/logo.png" alt="logo" border="0"  width="200" height="auto"></a>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
+  
+    
+    
+<!-- About the Project -->
+## :star2: About the Project
 
-## Available Scripts
 
-In the project directory, you can run:
+<!-- Screenshots -->
+### :camera: Screenshots
 
-### `npm start`
+<div align="center"> 
+  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- TechStack -->
+### :space_invader: Tech Stack
 
-### `npm test`
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.mysql.com/">MySQL</a></li>
+  </ul>
+</details>
 
-### `npm run build`
+<details>
+<summary>Tools</summary>
+  <ul>
+    <li><a href="https://www.trello.com/">Trello</a></li>
+    <li><a href="https://www.figma.com/">Figma</a></li>
+    <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+    <li><a href="https://www.jetbrains.com/es-es/idea/">intelliJ Idea</a></li>
+    <li><a href="https://www.postman.com/">Postman</a></li>
+  </ul>
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- Features -->
+### :dart: Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Feature 1
+- Feature 2
+- Feature 3
 
-### `npm run eject`
+<!-- Color Reference -->
+### :art: Color Reference
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<a href="https://ibb.co/wWKBxMH"><img src="https://i.ibb.co/6P4rfgh/Captura-de-pantalla-2022-07-21-a-las-10-37-46.png" alt="Captura-de-pantalla-2022-07-21-a-las-10-37-46" border="0"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- Getting Started -->
+## 	:toolbox: Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- Installation -->
+### :gear: Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Install my-project with npm
 
-## Learn More
+```bash
+  npm install
+  cd MotoHack_GP
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- Run Locally -->
+### :running: Run Locally
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clone the project
 
-### Code Splitting
+```bash
+  git clone https://github.com/xcapde/MotoHack_GP
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Go to the project directory
 
-### Analyzing the Bundle Size
+```bash
+  cd MotoHack_GP
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Install dependencies
 
-### Making a Progressive Web App
+```bash
+  npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Start the server
 
-### Advanced Configuration
+```bash
+  npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+<!-- Deployment -->
+### :triangular_flag_on_post: Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+<!-- Contact -->
+## :handshake: Hackaton Team
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# hackatonF5_2022
+[Xavier C.](https://github.com/xcapde)<br>
+[Fran Alvarez](https://github.com/Daevion32)<br> 
+[Alessandro](https://github.com/AlessHub)<br>
+[Bitia S.](https://github.com/Bitia83)<br>
+[Kerim O.](https://github.com/ozknkrm)<br>
+[Florangel R.](https://github.com/FLOR1219)<br> 
+[Fran Domínguez](https://github.com/devfdom)<br>
+
+Project Link: [https://github.com/xcapde/MotoHack_GP)
