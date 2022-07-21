@@ -1,0 +1,18 @@
+.spinner {
+    z-index: 2;
+    width: 10rem;
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    
+    animation: wheelLoader infinite 2s linear;
+}
+
+@keyframes wheelLoader {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
