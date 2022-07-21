@@ -1,16 +1,12 @@
 import './style/style.css'
 import { Home } from './pages/Home';
-import { Detail } from './pages/detail/Detail';
+import { Navbar } from './components/navbar/Navbar'
 
 function App() {
   return (
     <div className="App">
-
+        <Navbar/>
         <Home/>
-<<<<<<< HEAD
-=======
-        <Detail/>
->>>>>>> 1edaefdbe34ddabda77965f93c13642f3647ca42
     </div>
   );
 }
