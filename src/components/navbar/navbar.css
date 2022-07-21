@@ -30,11 +30,14 @@
 
   .button_ctn {
     display: flex;
+    height: 8vh;
   }
+
   .navbar_favlist_button {
     color: red;
     background-color: black;
-    padding: 20px;
+    height: 100%;
+    padding: 0 10%;
     border: none;
     font-size: 2em;
     font-family: 'Inter';
@@ -50,7 +53,6 @@
   .navbar_register {
     color: red;
     background-color: black;
-    padding: 20px;
     border: none;
     font-size: 2em;
     font-family: 'Inter';
