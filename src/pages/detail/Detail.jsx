@@ -46,10 +46,10 @@ export function Detail() {
 
 						<div className="product-main">
 							<div className="focus">
-								<span>{ motoDetail.prodYear}</span>
-								<span>{ motoDetail.km}km</span>
-								<span>{ motoDetail.cc}cc</span>
-								<span>{ motoDetail.hp}</span>
+								<span>Year: { motoDetail.prodYear}</span>
+								<span>Km: { motoDetail.km}</span>
+								<span>CC: { motoDetail.cc}</span>
+								<span> { motoDetail.hp}</span>
 								<i className="fa-solid fa-location-dot"></i>
 								<span>{ motoDetail.location}</span>
 							</div>
@@ -59,7 +59,7 @@ export function Detail() {
 
 						<div className="product-details">
 							<div className="product-total">
-								<p>€{motoDetail.price }</p>
+								<p>{motoDetail.price }€</p>
 							</div>
 						</div>
 						<div className="product-btns">

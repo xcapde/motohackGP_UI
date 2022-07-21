@@ -1,5 +1,5 @@
 .wrapper {
-    height: 100vh;
+    height: 90vh;
     position: relative;
     background-color: #ccc5b9;
   }
@@ -76,7 +76,7 @@
 
   }
   .focus i{
-    margin: 1rem;
+    margin-left: 2rem ;
   }
   /*.focus span:last-child {
     margin: 0 0 0 1rem;
@@ -144,4 +144,38 @@
     align-items: center;
     justify-content: center;
   }
+
+
+  @media  (max-width: 940px) {
+    .card {
+      flex-direction: column;
+      margin-top: 60px;
+    }
   
+    .product-left,
+    .product-right {
+      width: 100%;
+    }
+  
+    .product-right img {
+      width: 100%;
+      right: 0;
+      left: initial;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .product-right img {
+      width: 90%;
+      margin-top: 80px;
+      height:55vh ;
+    
+    }
+    .product-left {
+      width: 80% ;
+      
+    }
+    .product-main {
+      width: 100%;
+      }
+  }
