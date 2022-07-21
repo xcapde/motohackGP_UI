@@ -5,10 +5,10 @@ import {Detail} from './pages/detail/Detail'
 function App() {
   return (
     <div className="App">
-     
       <Navbar />
-      <Detail/>
+    
         <Home/>
+      
         
     </div>
   );

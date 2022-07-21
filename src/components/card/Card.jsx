@@ -7,7 +7,7 @@ export function Card(props){
 
                 <div className="card_img_cnt">
                     <Link to={`/detail/${props.moto.id}`}>
-                        <img className="moto_img" src="https://www.motofichas.com/images/phocagallery/Kawasaki/z900-2022/02-kawasaki-z900-2022-estudio-verde.jpg" alt="moto"/>
+                        <img className="moto_img" src={props.moto.image} alt="moto"/>
                     </Link>
                     <img src={props.moto.seller.avatar} className="sellerAvatar" alt="seller avatar"/>
                     <p className="moto_year">{props.moto.year}</p>

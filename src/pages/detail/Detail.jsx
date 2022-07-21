@@ -22,7 +22,7 @@ export function Detail() {
 		getDataById(id);
 
 	}, [id])
-	console.log(sellerAvatar)
+	
 	return (
 		
 		<section>
