@@ -16,4 +16,10 @@ export const motoServices = {
         const motosBySearch = axios.get(baseURL + `/motos?search=${search}`).then(res => res.data);
         return motosBySearch;
     },    
+
+    getFavoriteMotos(){
+        const favMotos = axios.get(baseURL + "/motos").then(res => res.data
+            .filter(moto => moto.isFavorite === true));
+        return favMotos;
+    },    
 }
