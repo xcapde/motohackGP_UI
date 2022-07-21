@@ -3,11 +3,16 @@
   top: 0;
 }
 
+.navbar_logo {
+  height: 100%;
+}
+
 .navbar {
     background-color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 8vh;
 }
   .topnav input[type=text] {
     float: right;
@@ -25,13 +30,11 @@
 
   .button_ctn {
     display: flex;
-    gap: 2em;
   }
   .navbar_favlist_button {
     color: red;
     background-color: black;
-    border-radius: 30px;
-    padding: 15px;
+    padding: 20px;
     border: none;
     font-size: 2em;
     font-family: 'Inter';
@@ -47,8 +50,7 @@
   .navbar_register {
     color: red;
     background-color: black;
-    border-radius: 30px;
-    padding: 15px;
+    padding: 20px;
     border: none;
     font-size: 2em;
     font-family: 'Inter';
