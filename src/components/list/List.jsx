@@ -17,8 +17,8 @@ export function List(){
             motoServices.getAllMotos().then(res =>{
                 if(!res) return;
                 setMotoList(res);
+                setIsLoading(false)
             })
-        setIsLoading(false)
     }    
     
     return(
@@ -27,7 +27,7 @@ export function List(){
                 {isLoading? <Loader/> : '' }
 
                 {motoList.map((moto,key) => 
-                <Card key={key} moto={moto}/>
+                <Card key={key} moto={moto} getAllData={getAllData}/>
                 )}              
 
         </section>

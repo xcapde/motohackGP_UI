@@ -2,6 +2,19 @@ import { Link } from "react-router-dom";
 
 export function Card(props){
 
+    const markFavorite=(moto)=>{
+        // let thisMoto = moto
+
+        // if(thisMoto.isFavorite === false){
+        //     thisMoto.isFavorite=true
+
+        //  }else thisMoto.isFavorite=false
+
+        // //  props.getAllData();
+
+        // console.log(moto.isFavorite)
+    }
+
     return (
         <section className="card_cnt">
 
@@ -11,7 +24,7 @@ export function Card(props){
                     </Link>
                     <img src={props.moto.seller.avatar} className="sellerAvatar" alt="seller avatar"/>
                     <p className="moto_year">{props.moto.year}</p>
-                    <button className="fav_btn">{props.moto.isFavorite}</button>
+                    <button onClick={()=>markFavorite(props.moto)} className={props.moto.isFavorite? "fav_btn isFav" : "fav_btn"}>{props.moto.isFavorite}</button>
                 </div>
 
                 <div className="card_text_cnt">

@@ -10,6 +10,8 @@
 :root{
     margin: 0;
     padding: 0;
+    background-color: #ccc5b9;
+
     
     --primaryColor: red;
 }

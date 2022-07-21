@@ -19,12 +19,6 @@ export function Navbar(){
     const onInputChange=(e)=>{
         const value = e.target.value;
         setSerachValue(value);
-
-        if(value.lenght === 0){
-            setSearchList([]);
-        } else if(value.lenght > 2){
-            getSearchData(searchValue.toLowerCase().trim());
-        }
     }
 
     const onHandleSubmit=(e)=>{
