@@ -1,16 +1,23 @@
 .card_cnt{
     width: 20%;
-    height: 39rem;
-    top:22rem;
+    height: 26rem;
     margin:2.5%;
     background-color: grey;
     display: flex ;
     position: relative;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0rem 1rem 1.5rem rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    
 }
-.card_img_cnt img{
+.card_cnt:hover{
+    box-shadow: 0rem 0.3rem 0.4rem rgba(255, 0, 0, 0.936);
+}
+.card_img_cnt{
     width: 100%;
+    height: 16rem;
+    
 }
 
 
@@ -18,12 +25,17 @@
     position:absolute;
     top:1rem;
     left:1.5rem;
+    height:2rem;
+    width: 2rem !important;
+    border-radius: 50%;
 
 }
-.moto_img img {
+.moto_img {
     width:100% ;
     position: relative;
-    height: auto;
+    height: 100%;
+    border-radius: 1rem;
+
 
 }
 .moto_year{
@@ -39,19 +51,24 @@
     right:1.5rem;
     top: 1rem;
 }
+
+.isFav{
+    background-color: yellowgreen;
+}
+
 .card_text_cnt{
     width: 100%;
     height:100%;
     display: flex;
-    font-size: 1rem;
+    font-size: 0.7rem;
     position: relative;
-    left: 4rem;
+    
 
 }
 
 .card_basicInfo{
     height: 4rem;
-    left: 20rem;
+    left: 10rem;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -60,35 +77,61 @@
 .card_info_box{
     display: flex;
     flex-direction: column;
-    right:22.5rem;
+    right:19rem;
     position: relative;
 
 }
-.moto_model{
-    bottom:1.5rem;
+.moto_brand{
+    left:10rem;
     position: relative;
 }
-.cad_info_btn{
-    height:4rem;
-    right:3rem;
-    bottom:1rem;
+.moto_model{
+    bottom:1.5rem;
+    left:10rem;
     position: relative;
+    width: 12rem;
+
+}
+.card_info_btn{
+    height:4rem;
+    left:10rem;
+    position: absolute;
 }
 .card_tech_box{
     height: 100%;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    top:7rem;
     position: relative;
-    right:12rem;
+    right:9rem;
+}
+.techInfo{
+    right:2rem;
+    position: relative;
+    top:3.5rem;
 }
 .price_location{
-    left:22rem;
+    left: 9rem;
     position: relative;
-    bottom: 2rem;
-    
+    height: 8rem;
+    width: 10rem;
+    top:6rem;
+    display: flex;
+    flex-direction: column;
+}
+.locationInfo{
+    right:1rem;
+    position: relative;
+    bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+
 }
 .priceInfo{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    right: 1rem;
+    bottom: 2.2rem;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
 }

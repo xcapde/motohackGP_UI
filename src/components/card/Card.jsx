@@ -2,16 +2,29 @@ import { Link } from "react-router-dom";
 
 export function Card(props){
 
+    const markFavorite=(moto)=>{
+        // let thisMoto = moto
+
+        // if(thisMoto.isFavorite === false){
+        //     thisMoto.isFavorite=true
+
+        //  }else thisMoto.isFavorite=false
+
+        // //  props.getAllData();
+
+        // console.log(moto.isFavorite)
+    }
+
     return (
         <section className="card_cnt">
 
                 <div className="card_img_cnt">
                     <Link to={`/detail/${props.moto.id}`}>
-                        <img className="moto_img" src="https://www.motofichas.com/images/phocagallery/Kawasaki/z900-2022/02-kawasaki-z900-2022-estudio-verde.jpg" alt="moto"/>
+                        <img className="moto_img" src={props.moto.image} alt="moto"/>
                     </Link>
                     <img src={props.moto.seller.avatar} className="sellerAvatar" alt="seller avatar"/>
                     <p className="moto_year">{props.moto.year}</p>
-                    <button className="fav_btn">{props.moto.isFavorite}</button>
+                    <button onClick={()=>markFavorite(props.moto)} className={props.moto.isFavorite? "fav_btn isFav" : "fav_btn"}>{props.moto.isFavorite}</button>
                 </div>
 
                 <div className="card_text_cnt">

@@ -1,0 +1,20 @@
+.searchList{
+    z-index: 2;
+    position: fixed;
+    background-color: rgb(17, 17, 17);
+    top: 10vh;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    align-items: center;
+}
+
+.back_btn {
+    align-self: flex-start;
+    margin: 1.5em;
+    border-radius: 5em;
+    height: 4vh;
+    width: 4vh;
+}
