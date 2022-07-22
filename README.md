@@ -14,7 +14,7 @@
 ### :camera: Screenshots
 
 <div align="center"> 
-  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
+<a href="https://ibb.co/yNsPjZM"><img src="https://i.ibb.co/grg9KfX/Captura-de-pantalla-2022-07-22-a-las-8-49-51.png" alt="Captura-de-pantalla-2022-07-22-a-las-8-49-51" border="0"></a>
 </div>
 
 
@@ -45,14 +45,6 @@
     <li><a href="https://www.postman.com/">Postman</a></li>
   </ul>
 </details>
-
-
-<!-- Features -->
-### :dart: Features
-
-- Feature 1
-- Feature 2
-- Feature 3
 
 <!-- Color Reference -->
 ### :art: Color Reference
