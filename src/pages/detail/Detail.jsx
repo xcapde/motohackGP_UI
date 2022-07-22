@@ -4,7 +4,7 @@ import { Navbar } from "../../components/navbar/Navbar";
 import { motoServices } from "../../data_API/motoServices";
 
 export function Detail() {
-	const [id, setId] = useState(useParams().id)
+	const [id] = useState(useParams().id)
 	const [motoDetail, setMotoDetail] = useState({});
 	const [showContact, setShowContact] = useState(false);
 	const navigate = useNavigate();
