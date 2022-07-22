@@ -57,7 +57,9 @@ export function Card(props){
                         <div className="price_location">
                             <h1 className="locationInfo">{props.moto.location}</h1>                            
                             <h1 className="priceInfo">{props.moto.price}€</h1>    
-                            <button className="card_info_btn">+INFO</button>                        
+                            <Link to={`/detail/${props.moto.id}`}>                            
+                                <button className="card_info_btn">MORE INFO</button>                        
+                            </Link>
                         </div>
                     </div>                      
                 </div>

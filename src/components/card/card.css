@@ -3,7 +3,7 @@
     width: 20%;
     height: 26rem;
     margin:2.5%;
-    background-color: grey;
+    background-color: var(--backCards);
     display: flex ;
     position: relative;
     flex-direction: column;
@@ -13,7 +13,7 @@
     
 }
 .card_cnt:hover{
-    box-shadow: 0rem 0rem 0.5rem rgb(212, 36, 36);
+    box-shadow: 0rem 0rem 0.5rem #d73128d2;
 }
 .card_img_cnt{
     width: 100%;
@@ -24,12 +24,13 @@
 .sellerAvatar{
     position:absolute;
     top:1rem;
-    left:1.5rem;
+    left:1rem;
     height:2rem;
     width: 2rem !important;
     border-radius: 50%;
-
+    object-fit: cover;
 }
+
 .moto_img {
     width:100% ;
     height: -webkit-fill-available;
@@ -53,7 +54,7 @@
 }
 
 .fav_btn{
-    right:1.5rem;
+    right:1rem;
     top: 1rem;
     color: #676767;
     cursor: pointer;
@@ -69,8 +70,8 @@
 
 .info_icons{
     position: absolute;
-    bottom: 1rem;
-    right: 1.5rem;
+    bottom: 2.5rem;
+    right: 2.6rem;
     display: flex;
 }
 
@@ -120,7 +121,23 @@
 .card_info_btn{
     height: 3rem;
     width: 7rem;
+    background-color: #A1A1A1;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
 }
+
+.card_info_btn:hover{
+    background-color: var(--primaryColorHover);
+    transition: all 0.5s ease-out;
+}
+
+.card_info_btn:active{
+    background-color: var(--primaryColorActive);
+    transition: none;
+}
+
 .card_tech_box{
     margin: 1rem;
 }
@@ -143,7 +160,7 @@
     display: flex;
 }
 
-@media (min-width: 390px) {
+@media (max-width: 599px) {
     .cardList {
         width: 100%;
         height: 100%;

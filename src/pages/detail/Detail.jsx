@@ -5,7 +5,8 @@ import { motoServices } from "../../data_API/motoServices";
 
 export function Detail() {
 	const [id, setId] = useState(useParams().id)
-	const [motoDetail, setMotoDetail] = useState({})
+	const [motoDetail, setMotoDetail] = useState({});
+	const [showContact, setShowContact] = useState(false);
 	const navigate = useNavigate();
 
 
@@ -41,28 +42,48 @@ export function Detail() {
 					</div>
 
 					<div className="product-left">
-             			<div className="header">
+             			<div className="header">	
+							<div className="header_top">
+								<div className="contact_box">
+									<div className="seller">
+										<img src="https://www.semana.com/resizer/9rjTQQMtznGrxgVhtJenzLrXPJA=/1200x675/filters:format(jpg):quality(50)//cloudfront-us-east-1.images.arcpublishing.com/semana/VB67IZFBYNDN5MZQFZK3ITSTLM.jpg" alt=""/> 
+										<p className="contactMail"><i className="fa-solid fa-envelope"></i></p>
+										<p className="contactWhats"><i className="fa-brands fa-whatsapp"></i></p>
+										<p onClick={()=>setShowContact(true)} className="contactMore"><i className="fa-solid fa-plus"></i></p>
 
-							<div className="contact_box">
-								<img src="https://www.semana.com/resizer/9rjTQQMtznGrxgVhtJenzLrXPJA=/1200x675/filters:format(jpg):quality(50)//cloudfront-us-east-1.images.arcpublishing.com/semana/VB67IZFBYNDN5MZQFZK3ITSTLM.jpg" alt=""/> 
-								<h4> Jeffrey</h4>
-								<p><i class="fa-solid fa-envelope"></i> infojeff@mail.com</p>
-								<p><i class="fa-brands fa-whatsapp"></i> +34 666 666 666</p> 
-							</div>								
-							
-							<div className="details_icons">  
-								<button className={motoDetail.isFavorite? "star isFavDetail" : "star"}><i className="fa-solid fa-star"></i></button>
-								<button className={motoDetail.isClassic?"classic_icon" : "hidden"}><i className="fa-solid fa-landmark"></i></button>
-								<button className={motoDetail.isEco?"eco_icon" : "hidden"}><i className="fa-solid fa-leaf"></i></button>
+										<div className={showContact? "open_cnt" : "hidden"}>
+											<button onClick={()=>setShowContact(false)} className="back_btn">
+												<i class="fa-solid fa-arrow-left"></i>
+											</button>
+											<div className="open_box">												
+												<div className="avatar">
+													<img src="https://www.semana.com/resizer/9rjTQQMtznGrxgVhtJenzLrXPJA=/1200x675/filters:format(jpg):quality(50)//cloudfront-us-east-1.images.arcpublishing.com/semana/VB67IZFBYNDN5MZQFZK3ITSTLM.jpg" alt=""/> 
+													<h4> Jeffrey</h4>
+												</div>
+												<div className="contact">
+													<div className="contactData"><i class="fa-solid fa-envelope contactMail"></i> infojeff@mail.com</div>
+													<div className="contactData"><i class="fa-brands fa-whatsapp contactWhats"></i> +34 666 666 666</div>
+												</div> 											
+											</div>
+										</div>
+										
+										
+									</div>
+									
+								</div>								
+								<div className="details_icons">  
+									<button className={motoDetail.isClassic?"classic_icon" : "hidden"}><i className="fa-solid fa-landmark"></i></button>
+									<button className={motoDetail.isEco?"eco_icon" : "hidden"}><i className="fa-solid fa-leaf"></i></button>
+									<button className={motoDetail.isFavorite? "star isFavDetail" : "star"}><i className="fa-solid fa-star"></i></button>
+								</div>
 							</div>
-							
-							<h1 className="brand_detail">{ motoDetail.brand}</h1>
-							<h1 className="model_detail">{ motoDetail.model}</h1>										
-							
+							<div className="details_title">
+								<h1 className="brand_detail">{ motoDetail.brand}</h1>
+								<h1 className="model_detail">{ motoDetail.model}</h1>
+							</div>																										
 						</div>
 
 						<div className="product-main">
-							<h5>Properties:</h5>
 							<div className="focus">
 								<span>Year:{ motoDetail.prodYear}</span>
 								<span>Km:{ motoDetail.km}</span>
@@ -74,13 +95,15 @@ export function Detail() {
 							</p>
 						</div>
 
-						<div className="product-details">
-							<div className="product-total">
-								<p>{motoDetail.price }€</p>
+						<div className="details_buy">
+							<div className="product-details">
+								<div className="product-total">
+									<p>{motoDetail.price }€</p>
+								</div>
 							</div>
-						</div>
-						<div className="product-btns">
-							<button className="product-add">BUY</button>
+							<div className="product-btns">
+								<button className="product-add">BUY</button>
+							</div>
 						</div>
 					</div>
 				</div>

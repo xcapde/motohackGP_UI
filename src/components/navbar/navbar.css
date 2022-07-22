@@ -113,35 +113,60 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color:#686370;
     height: 50%;
   }
 
- /* @media (max-width: 768px) {
-    .navbar_ctn {
-      height: 15rem;
+  .mobile{
+    display: none !important;
+  }
+
+  @media (max-width: 599px){
+    .navbar_menu, .slogan{ 
+      display: none;
+    }
+    .mobile{
+      display: flex !important;
+    }
+  
+    .logo{
+      padding: 0 10%;
+    }
+    .topnav{
+      width: 100%;
+    }
+
+    .topnav input{
+      width: 80% !important;
+    }
+
+    .log_btn, .favList_btn{
+      z-index: 2;
+      position: fixed !important;
+      bottom: 2%;
+      right: 3%;
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: rgb(73, 73, 73);
+      border: none;
+      align-items: center;
       justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      box-shadow: 0rem 0rem 0.5rem rgb(0 0 0 / 50%);
     }
-    .button_ctn {
-      flex-direction: column;
-      align-items: center;
+
+    .favList_btn{
+      bottom: 9%;
     }
-    
-    .logo {
-      position: relative;
-      margin-top: 1rem;
+
+    .log_btn i, .favList_btn i{
+      color: white;
+      font-size: large;
     }
-    
-    .topnav {
-      position: relative;
-      width: 80%;
-      height: 15%;
-      margin-bottom: 5vh;
+
+
+    .log_btn:hover, .favList_btn:hover{
+      background-color: var(--primaryColorHover);
     }
-    .navbar {
-      margin: 0;
-    }*/
-    
+  }
+
   

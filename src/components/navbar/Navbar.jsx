@@ -50,9 +50,11 @@ export function Navbar(){
         
                 <Link to={`/favorites/`}>
                     <button className={pathname.includes('/favorites')? "navbar_menu actived" : "navbar_menu"}>MY FAVORITES</button>
+                    <button className={pathname.includes('/favorites')? "favList_btn mobile actived" : "favList_btn mobile"}><i className="fa-solid fa-star"></i></button>
                 </Link>
                 <Link to={`/login/`}>
-                    <button className={pathname.includes('/login')? "navbar_menu actived" : "navbar_menu"}>LOG IN</button>                
+                    <button className={pathname.includes('/login')? "navbar_menu actived" : "navbar_menu"}>LOG IN</button> 
+                    <button className={pathname.includes('/login')? "log_btn mobile actived" : "log_btn mobile"}><i className="fa-solid fa-circle-user"></i></button> 
                 </Link>
                 
             </div>        

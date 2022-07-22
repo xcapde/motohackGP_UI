@@ -31,7 +31,7 @@ input{
     bottom: 0;
     width: 10vw;
     border: none;
-    background-color: #676767;
+    background-color: #A1A1A1;
     height: 5vh;
     border-radius: 1rem;
     border: 1px solid #fff;
@@ -49,6 +49,7 @@ input{
 }
 .login_btn:active{
     background-color: var(--primaryColorActive);
+    transition: none;
 }
 
 .newUser_btn{
@@ -68,5 +69,14 @@ input{
 }
 
 .newUser_btn:active{
-    background-color: var(--primaryColorHover);
+    background-color: var(--primaryColorActive);
+    transition: none;
+}
+
+@media (max-width: 599px){
+
+    .login_btn{
+        width: 30vw;
+    }
+
 }

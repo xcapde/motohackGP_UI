@@ -22,7 +22,11 @@
 }
 
 .back_btn:hover{
-    box-shadow: 0rem 0rem 0.5rem rgb(212, 36, 36);
+    box-shadow: 0rem 0rem 0.5rem var(--primaryColorHover);
+}
+
+.back_btn:active{
+    box-shadow: 0rem 0rem 0.5rem var(--primaryColorActive);
 }
 
 .searchList header{

@@ -1,44 +1,129 @@
 .wrapper {
-    height: 90vh;
-    position: relative;
+    width: 100vw;
   }
   
   .card {
-    max-width: 80rem;
-    position: relative;
-    display: flex;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: -2rem 2rem 3.2rem rgba(0, 0, 0, 0.2);
+    height: 85vh;
+    max-width: 80%;
+    box-shadow: -2rem 2rem 3.2rem rgb(0 0 0 / 20%);
     border-radius: 1rem;
     background: #bcbcbc;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2.5vh;
   }
   
   .product-left {
-    height: 100%;
     width: 70%;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 1rem;
-    display: flex;
     flex-direction: column;
     background: #bcbcbc;
     color: #000000;
+    display: flex;    
+    justify-content: space-between; 
+    position: relative; 
+  }
+  
+  .product-right {
+    background: #fff;
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+  }
+  
+  .product-right img {
+    border-radius: 1rem;
+    width: 100%;
   }
 
-  .contact_box{
-    margin-top: 2%;
+  .product-left .classic_icon, .product-left .eco_icon{
+    border: none;
+    border-radius: 2.5rem;
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-right: 2%;
+}
+
+.header{
+  height: 15vh
+}
+
+.header_top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.seller p{
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 50%;
+  background-color: #EFEFEF;
+  font-size: small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 0 0.5rem;
+}
+
+.seller p {
+  background-color: rgb(119, 139, 2);
+  color: white;
+}
+
+.contactMail:hover{
+  background-color: rgb(180, 41, 22);
+
+}
+.contactWhats:hover{
+  background-color: rgb(1, 167, 1);
+}
+
+.contactMore:hover{
+  background-color: #EFEFEF;
+  color: rgb(119, 139, 2);
+  cursor: pointer;
+}
+
+
+  
+  .header h1 {
+    text-transform: uppercase;
+    margin: 2% 0;
+  }
+
+  .brand_detail{
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  .model_detail{
+    font-size: xx-large;
+    font-weight: 500;
+  }
+
+  .details_icons{
     display: flex;
   }
 
-  .contact_box img{
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
+  .seller{
+    display: flex;
   }
 
-  .contact_box p{
-    margin-left: 2.5rem;
+  .contact_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contact_box img{
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    object-fit:cover;
   }
 
   .star {
@@ -55,50 +140,82 @@
     background-color: rgb(228, 228, 88);
     color: white;  
   }
-  
-  .product-right {
-    background: #fff;
-    height: auto;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
-  }
-  
-  .product-right img {
-    height: 30rem;
-    border-radius: 1rem;
+
+  .open_cnt .back_btn{
+    background-color:#272727;
+    color: white;
   }
 
-  .product-left .classic_icon, .product-left .eco_icon{
-    border: none;
-    border-radius: 2.5rem;
+  .open_cnt{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: #00000077;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 1rem;
+    backdrop-filter: blur( 0.7rem );
+    -webkit-backdrop-filter: blur( 0.7rem );
+  }
+
+  .open_box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .open_box .avatar{
+    height: 20%;
+  }
+
+  .open_box h4{
+    margin: 0.5rem 0 0 0;
+    text-align: center;
+    color: white;
+  }
+
+  .open_box .avatar img{
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .open_box .contact{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .open_box i{
     height: 1.7rem;
     width: 1.7rem;
-    margin-right: 2%;
-}
-  
-  .header h1 {
-    text-transform: uppercase;
-    margin: 2% 0;
+    border-radius: 50%;
+    background-color: rgb(119, 139, 2);
+    color: white;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 1rem 0 0;
   }
 
-  .brand_detail{
-    font-size: xx-large;
-    font-weight: bold;
+  .contactData{
+    display: flex;
+    justify-content: flex-start;
+    padding: 2%;
+    margin-left: 25%;
+    align-items: center;
+    color: white;
   }
-  .model_detail{
-    font-size: xx-large;
-    font-weight: 500;
-  }
+
   
-  /* Price */
   
-  .header h2 {
-    margin: 0rem 0 2rem 0;
-    font-weight: 300;
-    }
   
   /* Product Description */
   
@@ -167,6 +284,10 @@
   
   
   /* Add to cart button  */
+  .details_buy{
+    height: 25vh;
+  }
+  
   .product-btns{
     display:flex;
     justify-content: center;
@@ -179,13 +300,20 @@
     padding: 1.2rem;
     border-radius: 1rem;
     transition: all 0.5s ease-out;
-    background-color: #676767;
+    background-color: var(--primaryColor);
+    color: white;
     justify-content: center;
   }
   
   .product-add:hover {
     background-color: var(--primaryColorHover);
     color: #fff;
+    cursor: pointer;
+  }
+
+  .product-add:active {
+    background-color: var(--primaryColorActive);
+    transition: none;
   }
   
   .product-btns a {
@@ -225,8 +353,8 @@
     }
     .product-left {
       width: 83% ;
-      
     }
+
     .product-main {
       width: 100%;
       }
