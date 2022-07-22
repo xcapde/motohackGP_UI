@@ -108,4 +108,7 @@ Start the server
 [Florangel R.](https://github.com/FLOR1219)<br> 
 [Fran Domínguez](https://github.com/devfdom)<br>
 
-Project Link: [https://github.com/xcapde/MotoHack_GP)
+Project Links:
+
+[Frontend](https://github.com/xcapde/MotoHack_GP)</br>
+[Backend](https://github.com/xcapde/MotoHack_GP-backend)
