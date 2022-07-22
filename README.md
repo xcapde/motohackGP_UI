@@ -1,6 +1,7 @@
 <div align="center">
   <a href="https://imgbb.com/"><img src="https://i.ibb.co/pfdDMZp/logo.png" alt="logo" border="0"  width="200" height="auto"></a>
 </div>
+<h3 align="center">We are a platform for buying and selling used motorcycles where our customers can buy and sell their vehicles and users can view the information, mark them as favorites, search by filters and contact advertisers.</h3>
 
 <br />
   
