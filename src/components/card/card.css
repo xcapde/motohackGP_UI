@@ -33,7 +33,7 @@
 
 .moto_img {
     width:100% ;
-    height: -webkit-fill-available;
+    height: 100%;
     border-radius: 1rem;
     object-fit: cover;
 }
@@ -100,22 +100,44 @@
 
 .card_text_cnt{
     width: 100%;
-    height:100%;
+    height:50%;
     display: flex;
     font-size: 0.7rem;
     justify-content: space-between;
+}
+
+.card_text_cnt:hover button{
+    background-color: var(--primaryColorHover);
+    transition: all 0.5s ease-out;
 }
 
 .card_basicInfo{
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin: 1rem;
-
+    justify-content: space-around;
+    margin: 0 1rem;
 }
+
+.card_basicInfo h1, .card_basicInfo h2{
+    margin: 0;
+}
+
 .card_info_box{
     display: flex;
     flex-direction: column;
+}
+
+.card_info_box h1{
+    font-size: larger;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.card_info_box h2{
+    font-size: large;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .card_info_btn{
@@ -139,24 +161,42 @@
 }
 
 .card_tech_box{
-    margin: 1rem;
+    margin: 1rem 1rem;
 }
+
 .techInfo{
     display: flex;
     flex-direction: column;
 }
+
+.techInfo p{
+    margin: 0.4rem 0;
+    font-size: medium;
+}
+
 .price_location{
-    height: auto;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-around;
 }
+
 .locationInfo{
     display: flex;
+    font-size: small;
+    font-weight: 500;
 }
+.locationInfo i{
+    font-size: x-small;
+    padding-right: 0.35rem;
+    display: flex;
+    align-items: center;
+}
+
 .priceInfo{
-    font-size: 1.5rem;
+    font-size: medium;
     display: flex;
 }
 

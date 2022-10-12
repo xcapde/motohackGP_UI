@@ -54,7 +54,7 @@ export function Card(props){
 
                     <div className="card_tech_box">
                         <div className="price_location">
-                            <h1 className="locationInfo">{props.moto.location}</h1>                            
+                            <h1 className="locationInfo"><i className="fa-solid fa-location-dot"></i>{props.moto.location}</h1>                            
                             <h1 className="priceInfo">{props.moto.price}€</h1>    
                             <Link to={`/detail/${props.moto.id}`}>                            
                                 <button className="card_info_btn">MORE INFO</button>                        
