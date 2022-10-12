@@ -11,7 +11,10 @@
 
 <!-- Screenshots -->
 ### :camera: Screenshots
-![Home](https://user-images.githubusercontent.com/9727006/195416282-2b13d551-df9a-45fe-a255-1c41a70ba5f0.png)
+![Home](https://user-images.githubusercontent.com/9727006/195424481-4f9d846e-e1fe-4490-8143-d2dbb29ad6ac.png)
+![Details](https://user-images.githubusercontent.com/9727006/195424622-11c65e54-1bd1-4e86-b022-6c753790d7c6.png)
+![![Contact](https://user-images.githubusercontent.com/9727006/195424561-52ff39c2-b7d3-4cc4-aa9c-89b494c2b8b4.png)
+![Home mobile](https://user-images.githubusercontent.com/9727006/195424569-70de4934-230a-4bed-b446-0fa64976de1d.png)
 
 <!-- TechStack -->
 ### :space_invader: Tech Stack
