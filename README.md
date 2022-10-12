@@ -55,29 +55,13 @@
 <!-- Getting Started -->
 ## 	:toolbox: Getting Started
 
-<!-- Installation -->
-### :gear: Installation
-
-Install my-project with npm
-
-```bash
-  npm install
-  cd MotoHack_GP
-```
-
 <!-- Run Locally -->
 ### :running: Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/xcapde/MotoHack_GP
-```
-
-Go to the project directory
-
-```bash
-  cd MotoHack_GP
+  git clone https://github.com/xcapde/MotoHack_GP-UI.git  
 ```
 
 Install dependencies
@@ -110,5 +94,5 @@ Start the server
 
 Project Links:
 
-[Frontend](https://github.com/xcapde/MotoHack_GP)</br>
-[Backend](https://github.com/xcapde/MotoHack_GP-backend)
+[Frontend](https://github.com/xcapde/MotoHack_GP-UI)</br>
+[Backend](https://github.com/xcapde/MotoHack_GP-API)
