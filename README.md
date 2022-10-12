@@ -4,8 +4,6 @@
 <h3 align="center">We are a platform for buying and selling used motorcycles where our customers can buy and sell their vehicles and users can view the information, mark them as favorites, make searches and contact advertisers.</h3>
 
 <br />
-  
-    
     
 <!-- About the Project -->
 ## :star2: About the Project
@@ -13,11 +11,7 @@
 
 <!-- Screenshots -->
 ### :camera: Screenshots
-
-<div align="center"> 
-<a href="https://ibb.co/yNsPjZM"><img src="https://i.ibb.co/grg9KfX/Captura-de-pantalla-2022-07-22-a-las-8-49-51.png" alt="Captura-de-pantalla-2022-07-22-a-las-8-49-51" border="0"></a>
-</div>
-
+![Home](https://user-images.githubusercontent.com/9727006/195416282-2b13d551-df9a-45fe-a255-1c41a70ba5f0.png)
 
 <!-- TechStack -->
 ### :space_invader: Tech Stack
