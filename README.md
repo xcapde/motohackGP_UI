@@ -11,10 +11,10 @@
 
 <!-- Screenshots -->
 ### :camera: Screenshots
-![Home](https://user-images.githubusercontent.com/9727006/195424481-4f9d846e-e1fe-4490-8143-d2dbb29ad6ac.png)
-![Details](https://user-images.githubusercontent.com/9727006/195424622-11c65e54-1bd1-4e86-b022-6c753790d7c6.png)
-![![Contact](https://user-images.githubusercontent.com/9727006/195424561-52ff39c2-b7d3-4cc4-aa9c-89b494c2b8b4.png)
-![Home mobile](https://user-images.githubusercontent.com/9727006/195424569-70de4934-230a-4bed-b446-0fa64976de1d.png)
+![Home](https://user-images.githubusercontent.com/9727006/195426141-eed5d7d0-d0ff-463c-bef3-564378691548.png)
+![Detail](https://user-images.githubusercontent.com/9727006/195426151-d1ebf63f-12ae-43e3-9353-409345151348.png)
+![Contact](https://user-images.githubusercontent.com/9727006/195426160-71da81a6-02c2-4bd0-b349-d04b0fdf8077.png)
+![Home Mobile](https://user-images.githubusercontent.com/9727006/195426168-0459f8fb-be91-4e11-8808-6641abd77214.png)
 
 <!-- TechStack -->
 ### :space_invader: Tech Stack
