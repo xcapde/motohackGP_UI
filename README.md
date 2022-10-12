@@ -4,8 +4,6 @@
 <h3 align="center">We are a platform for buying and selling used motorcycles where our customers can buy and sell their vehicles and users can view the information, mark them as favorites, make searches and contact advertisers.</h3>
 
 <br />
-  
-    
     
 <!-- About the Project -->
 ## :star2: About the Project
@@ -13,11 +11,10 @@
 
 <!-- Screenshots -->
 ### :camera: Screenshots
-
-<div align="center"> 
-<a href="https://ibb.co/yNsPjZM"><img src="https://i.ibb.co/grg9KfX/Captura-de-pantalla-2022-07-22-a-las-8-49-51.png" alt="Captura-de-pantalla-2022-07-22-a-las-8-49-51" border="0"></a>
-</div>
-
+![Home](https://user-images.githubusercontent.com/9727006/195426141-eed5d7d0-d0ff-463c-bef3-564378691548.png)
+![Detail](https://user-images.githubusercontent.com/9727006/195426151-d1ebf63f-12ae-43e3-9353-409345151348.png)
+![Contact](https://user-images.githubusercontent.com/9727006/195426160-71da81a6-02c2-4bd0-b349-d04b0fdf8077.png)
+![Home Mobile](https://user-images.githubusercontent.com/9727006/195426168-0459f8fb-be91-4e11-8808-6641abd77214.png)
 
 <!-- TechStack -->
 ### :space_invader: Tech Stack
@@ -55,29 +52,13 @@
 <!-- Getting Started -->
 ## 	:toolbox: Getting Started
 
-<!-- Installation -->
-### :gear: Installation
-
-Install my-project with npm
-
-```bash
-  npm install
-  cd MotoHack_GP
-```
-
 <!-- Run Locally -->
 ### :running: Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/xcapde/MotoHack_GP
-```
-
-Go to the project directory
-
-```bash
-  cd MotoHack_GP
+  git clone https://github.com/xcapde/MotoHack_GP-UI.git  
 ```
 
 Install dependencies
@@ -110,5 +91,5 @@ Start the server
 
 Project Links:
 
-[Frontend](https://github.com/xcapde/MotoHack_GP)</br>
-[Backend](https://github.com/xcapde/MotoHack_GP-backend)
+[Frontend](https://github.com/xcapde/MotoHack_GP-UI)</br>
+[Backend](https://github.com/xcapde/MotoHack_GP-API)
