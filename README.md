@@ -11,9 +11,11 @@
 
 <!-- Screenshots -->
 ### :camera: Screenshots
+###### PC
 ![Home](https://user-images.githubusercontent.com/9727006/195426141-eed5d7d0-d0ff-463c-bef3-564378691548.png)
 ![Detail](https://user-images.githubusercontent.com/9727006/195426151-d1ebf63f-12ae-43e3-9353-409345151348.png)
 ![Contact](https://user-images.githubusercontent.com/9727006/195426160-71da81a6-02c2-4bd0-b349-d04b0fdf8077.png)
+###### MOBILE
 ![Home Mobile](https://user-images.githubusercontent.com/9727006/195426168-0459f8fb-be91-4e11-8808-6641abd77214.png)
 
 <!-- TechStack -->
