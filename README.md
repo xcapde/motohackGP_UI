@@ -73,11 +73,6 @@ Start the server
   npm start
 ```
 
-
-<!-- Deployment -->
-### :triangular_flag_on_post: Deployment
-
-
 <!-- Contact -->
 ## :handshake: Hackaton Team
 
